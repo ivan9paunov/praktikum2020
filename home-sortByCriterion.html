@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required META tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto+Slab:wght@800&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+        <!---->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>КРИТЕРИЙ</title>
+        <link rel="stylesheet" href="assets/styles/dist/app.css">
+        <script src="js/movie-genres.js"></script>
+    </head>
+<body>
+
+    <div class="container mt-2 mb-5">
+
+        <div class="row my-3 d-flex align-items-center justify-content-center">
+            <div class="col-md-5 mt-3 mt-md-0">
+                <div class="logo-container d-flex align-items-center">
+                    <img src="assets/img/logo.png" class="logo-icon"></img>
+                    <span class="ml-1 logo-title">Филмов проект</span>   
+                </div>
+            </div>
+            <div class="col-md-7 mt-3 mt-md-0">
+                <div class="nav-buttons d-flex">
+                    <button class="icon-container bg-primary text-white d-flex flex-column p-2 p-md-2 align-items-center justify-content-center rounded">
+                        <img src="assets/img/icons/home.png"></img>
+                        <span class="nav-button-text">НАЧАЛО</span>
+                    </button> 
+                    <button class="icon-container bg-primary text-white d-flex flex-column p-2 p-md-2 align-items-center justify-content-center rounded">
+                        <img src="assets/img/icons/friends.png"></img>
+                        <span>ПРИЯТЕЛИ</span>
+                    </button> 
+                    <button class="icon-container bg-primary text-white d-flex flex-column p-2 p-md-2 align-items-center justify-content-center rounded">
+                        <img src="assets/img/icons/notifications.png"></img>
+                        <span>ИЗВЕСТИЯ</span>
+                    </button>
+                    <button class="icon-container bg-primary text-white d-flex flex-column p-2 p-md-2 align-items-center justify-content-center rounded">
+                        <img src="assets/img/icons/profile.png"></img>
+                        <span>ПРОФИЛ</span>
+                    </button>
+                    <button class="icon-container bg-secondary text-white d-flex flex-column p-2 p-md-2 align-items-center justify-content-center rounded">
+                        <img src="assets/img/icons/exit.png"></img>
+                        <span>ИЗХОД</span>
+                    </button>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 ">
+        <div class="row d-flex">
+            <div class="col-md-3">
+                <div class="form-search">
+                    <label class="search" for="SearchForm">ТЪРСЕНЕ ПО ИМЕ НА ФИЛМ:</label>
+                    <!-- Search form -->
+                    <div class="md-form mt-0">
+                        <input class="form-control" type="text" placeholder="Търси..." aria-label="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="form-group mx-3">
+                        <label class="sortBy" for="sortBy">СОРТИРАЙ:</label>
+                            <select class="custom-select" id="sortBy">
+                                <option selected disabled>Критерий на сортиране...</option>
+                                <option value="popular">Най-популярни филми</option>
+                                <option value="top_rated">Най-висок рейтинг</option>                        
+                            </select>
+                    </div>
+                </div>
+                <div class="row searchButtons mb-3">
+                    <button class="buton-izchisti btn-secondary">ИЗЧИСТИ</button>
+                    <button class="buton-tarsi btn-primary">ТЪРСИ</button>
+                </div>
+                <div class="row">
+                    <div class="form-group mx-3">
+                        <label class="sortBy" for="sortByYear">ИЗБЕРИ ГОДИНА:</label>
+                            <select class="custom-select" id="sortByYear">
+                                <option selected disabled>Най-популярните филми за...</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col">
+                        <span class="movieGenreHeader">ЖАНР</span>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="animation" data-value="16">
+                            <label class="custom-control-label" for="animation">Анимация</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="10752">
+                            <label class="custom-control-label" for="10752">Военен</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="99">
+                            <label class="custom-control-label" for="99">Документален</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="18">
+                            <label class="custom-control-label" for="18">Драма</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="28">
+                            <label class="custom-control-label" for="28">Екшън</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="36">
+                            <label class="custom-control-label" for="36">Исторически</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="35">
+                            <label class="custom-control-label" for="35">Комедия</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="80">
+                            <label class="custom-control-label" for="80">Криминален</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="9648">
+                            <label class="custom-control-label" for="9648">Мистерия</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="10402">
+                            <label class="custom-control-label" for="10402">Мюзикъл</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="878">
+                            <label class="custom-control-label" for="878">Научна фантастика</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="12">
+                            <label class="custom-control-label" for="12">Приключенски</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="10749">
+                            <label class="custom-control-label" for="10749">Романтичен</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="10751">
+                            <label class="custom-control-label" for="10751">Семеен</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="10770">
+                            <label class="custom-control-label" for="10770">Телевизионен</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="53">
+                            <label class="custom-control-label" for="53">Трилър</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="37">
+                            <label class="custom-control-label" for="37">Уестърн</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="27">
+                            <label class="custom-control-label" for="27">Ужаси</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="14">
+                            <label class="custom-control-label" for="14">Фантастика</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATALOG - FIRST ROW-->
+        <div id="movies-container" class="row">
+            
+        </div>
+
+        <div id="movie-template" class="d-none">
+            <div class="col-md-3">
+                <!-- Card -->
+                    <div class="card" >
+                        <img src="" class="movie-template-image card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text movie-date"></p>
+                            <div class="card-footer wrap"><span class="movieRating">РЕЙТИНГ: </span><span class="pull-right movieRating vote-average"></span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTemplate">
+                            РЕЗЮМЕ
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalTemplate" tabindex="-1" aria-labelledby="modalTemplateLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalTemplateLabel"><!-- Movie Title --></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p class="overview text-justify text-indent"><!-- Movie Overview --></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <span class="movie-genre"><!-- Movie Genre --></span>
+                                            <span>&bull;</span>
+                                            <span class="movie-duration"> <!-- Movie Duration --></span>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">ЗАТВОРИ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+            </div>
+        </div>
+    </div>
+
+<script>
+
+        $(document).ready(function() {
+            
+            var apiKey = "f1f5877c7d8c646b47bf279e9130fdd1";
+            
+            $('.buton-tarsi').click(function(){
+                moviesBy = $('#sortBy').val();
+
+                $.ajax({
+                    method: "GET",
+                    url: "https://api.themoviedb.org/3/movie/" + moviesBy + "?api_key=" + apiKey + "&language=en-US",
+                    dataType: "json"
+                }).done(function(response) {
+
+                renderMovies(response);
+
+                console.log(response);
+
+                }).fail(function() {
+                console.log("Something went wrong!");
+                }).always(function() {
+                console.log("The request is done!");
+                });
+            
+            $('.buton-izchisti').click(function(){
+                $('#movies-container').empty(); });
+
+
+            function renderMovies(response){
+
+                response.results.forEach(element => {
+
+                    console.log(element.title, element.poster_path, element.release_date, element.vote_average, element.overview, element.genre_ids)
+
+                    let $template = $('#movie-template').html();
+                    $template = $($template).clone();
+                    
+                    $template.find('img').attr('src', `https://image.tmdb.org/t/p/w220_and_h330_face${element.poster_path}`);
+                    $template.find('.card-title').text(element.title);
+                    $template.find('.movie-date').text(element.release_date);
+                    $template.find('.vote-average').text(element.vote_average);
+                    //Modal Changes
+                    $template.find('.modal-title').text(element.title);
+                    $template.find('.overview').text(element.overview);
+                    $template.find('.movie-genre').text(element.genre_ids);
+
+                    $('#movies-container').append($template);
+                });    
+            }
+            });
+
+        });
+
+
+</script>
+
+</body>
+</html>

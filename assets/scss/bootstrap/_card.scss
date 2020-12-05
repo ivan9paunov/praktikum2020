@@ -1,0 +1,86 @@
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.wrap { 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 1.75rem;
+    box-shadow: 0px 5px 12px -4px rgba(122,122,122,0.55);
+}
+
+.card-title {
+    min-height: 3.75rem;
+    color: #032541;
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
+.card-footer {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: baseline;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.movieRating {
+    color: #80192f;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn {
+    padding: 0.275rem 0.55rem;
+    font-family: 'Merriweather', serif;
+}
+
+.modal-content {
+    min-width: 35rem;
+}
+
+.modal-dialog-centered {
+    justify-content: center;
+}
+
+.modal-title {
+    color: #80192f;
+    font-size: 1.75rem;
+    font-family: 'Merriweather', serif;
+}
+
+.modal-body {
+    color: #032541;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-indent {
+    text-indent: 2rem;
+}

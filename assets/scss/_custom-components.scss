@@ -1,0 +1,65 @@
+.logo-container {
+    flex-wrap: wrap;
+}
+
+.logo-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #80192f;
+}
+
+.icon-container {
+    border: none;
+    flex: 1;
+    box-shadow: -1px 9px 10px -8px rgba(0,0,0,0.75);
+}
+
+.icon-container + .icon-container {
+    margin-left: 0.5rem;
+}
+
+.nav-buttons {
+    flex-wrap: wrap;
+}
+
+.firstColumn {
+    align-items: center;
+    display: flex;
+}
+
+.search {
+    font-family: 'Merriweather', serif;
+    color: #032541;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.searchButtons {
+    justify-content: center;
+}
+
+.form-search {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.sortBy {
+    font-family: 'Merriweather', serif;
+    color: #032541;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.movieGenreHeader {
+    font-family: 'Merriweather', serif;
+    color: #032541;
+    width: 100%;
+    display: flex;
+}
